@@ -6,6 +6,8 @@ body {
  
   padding: 0;
  
+   display: block;
+   align-items: center;
  }
  
  .helpnav {
@@ -115,7 +117,8 @@ body {
  }
  
  .btn {
- 
+ background-color: red ' 
+   
   display: flex;
  
   align-items: center;
@@ -193,7 +196,7 @@ body {
  .subnav {
  
   float: left;
- 
+  margin-left: -8px;
   overflow: hidden;
  
  }
@@ -210,7 +213,7 @@ body {
  
   color: rgb(14, 13, 13);
  
-  padding: 9px 20px;
+  padding: 9px 15px;
  
   background-color: inherit;
  
@@ -285,7 +288,8 @@ body {
  }
  
  .belownav {
- 
+  
+ /* background-color: aqua; */
   margin-top: -1em;
  
   background-color: rgba(214, 213, 213, 0.325);
@@ -296,19 +300,21 @@ body {
  
  
  
- .belownav ul {
+  /* .belownav ul {
  
   display: flex;
  
   list-style: none;
+  gap: 50px;
  
   justify-content: space-around;
  
   padding-left: 20em;
  
   padding-right: 20em;
- 
+  
  }
+
  
  .belownav a {
  
@@ -336,8 +342,40 @@ body {
  
   align-items: center;
  
- }
+ } */
+
+ /* Added later on */
+ #someOtherOffer{
+  display: flex;
+  padding:18px 0px ;
+  background-color: rgb(242,242,242);
+ justify-content: center;
  
+  
+}
+#someOtherOffer a{
+ 
+  text-decoration: none;
+  font-size: 15px;
+  word-spacing: 1.4px;
+  color: #2e3337;
+  letter-spacing: 0.5px;
+ 
+  
+}
+#someOtherOffer div{
+ display: inline-block;
+ /* background-color: tomato; */
+ margin: 0px 25px;
+  
+}
+
+
+
+
+
+
+
  .latenight {
  
   background-color: #06050bdc;
@@ -837,7 +875,12 @@ body {
   justify-content: center;
  
   padding: 2em 2em;
+  
  
+ }
+
+ .imgbutton img{
+  width: 100%;
  }
  
  .footer {
