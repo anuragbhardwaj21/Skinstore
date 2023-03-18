@@ -1,173 +1,177 @@
 
-var robinData = [
+var productData = [
     {
-        image_url: "https://static.thcdn.com/images/xsmall/webp/productimg/1600/1600/11588128-5464550909161491.jpg",
-        name: "Decorté Liposome Moisture Serum 1.3oz",
-        box: "30% off select Decorte + Gift",
-        price: "66.50",
+        image_url: "https://static.thcdn.com/images/large/webp//productimg/1600/1600/12635431-1554893265930548.jpg",
+        name: "Christophe Robin Delicate Volumising Conditioner with Rose Extracts 200ml",
+        box: "25% off with code LUCKY",
+        price: "39.00",
 
     },
     {
-        image_url: "https://static.thcdn.com/images/xsmall/webp//productimg/1600/1600/12682868-2054802894273517.jpg",
-        name: "Decorté Botanical Skincare Collection 6 Piece Set (Worth $161.00)",
-        box: "30% off select Decorte + Gift",
-        price: "80.50",
+        image_url: "https://static.thcdn.com/images/large/webp//productimg/1600/1600/11732894-2094931106360459.jpg",
+        name: "Daniel Sandler Watercolour Liquid Cheek Colour 15ml (Various Shades)",
+        box: "30% off with code DANIEL",
+        price: "25.00",
 
     },
     {
-        image_url: "https://static.thcdn.com/images/xsmall/webp//productimg/1600/1600/12682870-1654802894434596.jpg",
-        name: "Decorté AQ Perfect Repair 7 Piece Set (Worth $250.00)",
-        box: "30% off select Decorte + Gift",
-        price: "152.00",
+        image_url: "https://static.thcdn.com/images/large/webp//productimg/1600/1600/13971627-1124998491824470.jpg",
+        name: "Deck Of Scarlet Big Lash Energy - Long & Strong Mascara",
+        box: "20% off with code SCAR",
+        price: "28.00",
 
     },
     {
-        image_url: "https://static.thcdn.com/images/xsmall/webp//productimg/1600/1600/12682869-1224802894336487.jpg",
-        name: "Decorté Clean and Pure Facial Cleansing Essentials Set (Worth $139.00)",
-        box: "30% off select Decorte + Gift",
-        price: "80.00",
-
-    },
-
-
-    {
-        image_url: "https://static.thcdn.com/images/xsmall/webp/productimg/1600/1600/11995336-5244635651652236.jpg",
-        name: "Decorté Vita De Rêve Lotion 10.1 fl. oz/300ml (Worth $90)",
-        box: "30% off select Decorte + Gift",
-        price: "75.50",
-
-    },
-    {
-        image_url: "https://static.thcdn.com/images/xsmall/webp//productimg/1600/1600/12356557-7384717418093823.jpg",
-        name: "Decorté AQ Moisture Layering Duo (Worth $190)",
-        box: "30% off select Decorte + Gift",
-        price: "161.50",
-
-    },
-    {
-        image_url: "https://static.thcdn.com/images/large/webp/productimg/1600/1600/12019079-1204653615170799.jpg",
-        name: "Decorté Loose Powder 1oz (Various Shades)",
-        box: "30% off select Decorte + Gift",
-        price: "50.00",
-
-    },
-    {
-        image_url: "https://static.thcdn.com/images/large/webp//productimg/1600/1600/12441879-1974736973748029.jpg",
-        name: "Decorté AQ Lotion and Emulsion Duo",
-        box: "30% off select Decorte + Gift",
-        price: "190.00",
-
-    },
-
-
-    {
-        image_url: "https://static.thcdn.com/images/xsmall/webp//productimg/1600/1600/11759902-6104750524487590.jpg",
-        name: "Decorté Prime Latte 150ml",
-        box: "30% off select Decorte + Gift",
-        price: "45.50",
-
-    },
-    {
-        image_url: "https://static.thcdn.com/images/xsmall/webp/productimg/1600/1600/12144170-1574676149225227.jpg",
-        name: "Decorté AQ Cleansing Cream 4.1oz",
-        box: "30% off select Decorte + Gift",
-        price: "60.00",
-
-    },
-    {
-        image_url: "https://static.thcdn.com/images/large/webp//productimg/1600/1600/12462157-1984747708061949.jpg",
-        name: "Decorté Lip Oil - Fuchsia Rose 04 0.15 fl. Oz.",
-        box: "30% off select Decorte + Gift",
+        image_url: "https://static.thcdn.com/images/large/webp//productimg/1600/1600/13507087-5975032476504174.jpg",
+        name: "Wander Beauty Unlashed Volume and Curl Mascara - Tarmac 9g",
+        box: "15% off with code WANDE",
         price: "27.00",
 
     },
     {
-        image_url: "https://static.thcdn.com/images/large/webp/productimg/1600/1600/11691717-2104561042713873.jpg",
-        name: "Decorté Cream Blusher (Various Shades)",
-        box: "30% off select Decorte + Gift",
-        price: "35.00",
+        image_url: "https://static.thcdn.com/images/large/webp//productimg/1600/1600/13996095-8595031482300943.jpg",
+        name: "Elizabeth Arden Blockbuster Set",
+        box: "40% off with code ARDEN",
+        price: "42.00",
+
+    },
+    
+
+
+    {
+        image_url: "https://static.thcdn.com/images/large/webp//productimg/1600/1600/13411317-1324994437377264.jpg",
+        name: "Christophe Robin New Dreamy Volume Ritual",
+        box: "25% off with code LUCKY",
+        price: "62.00",
+
+    },
+    {
+        image_url: "https://static.thcdn.com/images/large/webp//productimg/1600/1600/10553426-8114931104872981.jpg",
+        name: "Daniel Sandler Waterbrush",
+        box: "30% off with code DANIEL",
+        price: "25.00",
+    },
+    {
+        image_url: "https://static.thcdn.com/images/large/webp//productimg/1600/1600/13971582-9865000417132418.jpg",
+        name: "Deck Of Scarlet Dual Drama Liquid Eyeliner (Various Shades)",
+        box: "20% off with code SCAR",
+        price: "28.00",
+
+    },
+    {
+        image_url: "https://static.thcdn.com/images/large/webp//productimg/1600/1600/13482284-4384963508334210.jpg",
+        name: "Wander Beauty Lip Retreat Oil 20ml (Various Shades)",
+        box: "15% off with code WANDE",
+        price: "22.00",
+
+    },
+    {
+        image_url: "https://static.thcdn.com/images/large/webp//productimg/1600/1600/11313646-1994918723914534.jpg",
+        name: "Elizabeth Arden Beautiful Color Bold Liquid Lipstick (Various Colors)",
+        box: "40% off with code ARDEN",
+        price: "16.50",
 
     },
 
 
-    {
-        image_url: "https://static.thcdn.com/images/large/webp/productimg/1600/1600/11691687-1954561040135898.jpg",
-        name: "Decorté Eye Glow Gem (Various Shades)",
-        box: "30% off select Decorte + Gift",
-        price: "27.00"
+
+
+     {
+        image_url: "https://static.thcdn.com/images/large/webp/productimg/960/960/10556828-1984358354248728.jpg",
+        name: "Christophe Robin Antioxidant Conditioner with 4 Oils and Blueberry (8.7oz)",
+        box: "25% off with code LUCKY",
+        price: "21.50",
 
     },
     {
-        image_url: "https://static.thcdn.com/images/xsmall/webp/productimg/1600/1600/11588125-9294529913768699.jpg",
-        name: "Decorté Liposome Eye Cream 15ml",
-        box: "30% off select Decorte + Gift",
-        price: "62.00"
+        image_url: "https://static.thcdn.com/images/large/webp//productimg/1600/1600/12436045-3134746401363193.jpg",
+        name: "Daniel Sandler Anti-Redness Foundation Primer",
+        box: "30% off with code DANIEL",
+        price: "37.50",
+    },
+    {
+        image_url: "https://static.thcdn.com/images/large/webp//productimg/1600/1600/13971596-1904998482750547.jpg",
+        name: "Deck Of Scarlet Mirror Glaze Highlighting Trio (Various Shades)",
+        box: "20% off with code SCAR",
+        price: "36.00"
 
     },
     {
-        image_url: "https://static.thcdn.com/images/large/webp/productimg/1600/1600/11588133-1774529914238919.jpg",
-        name: "Decorté Vi-Fusion Intro Skincare Kit (Worth $262)",
-        box: "30% off select Decorte + Gift",
-        price: "200.00",
-
-    },
-    {
-        image_url: "https://static.thcdn.com/images/xsmall/webp/productimg/1600/1600/11759904-1614586382704109.jpg",
-        name: "Decorté Eye & Lip Makeup Remover",
-        box: "30% off select Decorte + Gift",
-        price: "18.00",
-
-    },
-
-    {
-        image_url: "https://static.thcdn.com/images/xsmall/webp//productimg/1600/1600/12144169-1004731376886103.jpg",
-        name: "Decorté AQ Peel Off Lifting Mask 2.9oz",
-        box: "30% off select Decorte + Gift",
-        price: "195.00",
-
-    },
-    {
-        image_url: "https://static.thcdn.com/images/xsmall/webp//productimg/original/12706871-5264918200667656.jpg",
-        name: "Decorté Purifying Foam Cleanser 125m",
-        box: "30% off select Decorte + Gift",
+        image_url: "https://static.thcdn.com/images/large/webp//productimg/1600/1600/12219339-1204897449786360.jpg",
+        name: "Wander Beauty Wanderlust Powder Foundation 0.31 oz (Various Shades)",
+        box: "15% off with code WANDE",
         price: "40.00",
 
     },
     {
-        image_url: "https://static.thcdn.com/images/xsmall/webp/productimg/1600/1600/11588129-1454529914064634.jpg",
-        name: "Decorté Vi-Fusion 24/7 Eye Cream 0.53oz",
-        box: "30% off select Decorte + Gift",
-        price: "150.00",
+        image_url: "https://static.thcdn.com/images/large/webp//productimg/1600/1600/13461927-1144911419829243.jpg",
+        name: "Elizabeth Arden Exclusive Red Carpet Ready Lashes Set",
+        box: "40% off with code ARDE",
+        price: "125.00",
+    },
+
+
+
+
+    {
+        image_url: "https://static.thcdn.com/images/large/webp//productimg/1600/1600/12635432-1134893265973415.jpg",
+        name: "Christophe Robin Purifying Conditioner Gelée with Sea Minerals 200ml",
+        box: "25% off with code LUCKY",
+        price: "15.60",
 
     },
     {
-        image_url: "https://static.thcdn.com/images/xsmall/webp/productimg/1600/1600/12144171-1664676149378437.jpg",
-        name: "Decorté AQ Washing Cream 4.5oz",
-        box: "30% off select Decorte + Gift",
-        price: "50.00",
+        image_url: "https://static.thcdn.com/images/large/webp//productimg/1600/1600/11925928-1214931106708867.jpg",
+        name: "Daniel Sandler Watercolour Liquid Customisable Colour Set for Cheeks",
+        box: "30% off with code DANIEL",
+        price: "66.00",
+    },
+    {
+        image_url: "https://static.thcdn.com/images/large/webp//productimg/1600/1600/13971628-1364998481061634.jpg",
+        name: "Deck Of Scarlet Double Take Face Brush",
+        box: "20% off with code SCAR",
+        price: "32.000"
+    },
+    {
+        image_url: "https://static.thcdn.com/images/large/webp//productimg/1600/1600/13909150-1984975453071900.jpg",
+        name: "Wander Beauty Getaway Eye and Face Palette - Island Hop",
+        box: "15% off with code WANDE",
+        price: "44.00",
+    },
+    {
+        image_url: "https://static.thcdn.com/images/large/webp//productimg/1600/1600/10801127-9564918723292010.jpg",
+        name: "Elizabeth Arden Flawless Finish Sponge On Cream Makeup (23g)",
+        box: "40% off with code ARDE",
+        price: "30.00",
 
     },
 
-    {
-        image_url: "https://static.thcdn.com/images/xsmall/webp//productimg/1600/1600/12521563-2034762955030880.jpg",
-        name: "Decorté Whitelogist Brightening Correcting Serum with Kohic Acid 40ml",
-        box: "30% off select Decorte + Gift",
-        price: "140.00",
 
+
+
+    {
+        image_url: "https://static.thcdn.com/images/large/webp//productimg/1600/1600/12635425-2054893266456808.jpg",
+        name: "Christophe Robin Hydrating Leave-in Mist with Aloe Vera 150ml",
+        box: "25% off with code LUCKY",
+        price: "39.00",
     },
     {
-        image_url: "https://static.thcdn.com/images/xsmall/webp//productimg/1600/1600/12356556-8114717417767657.jpg",
-        name: "Decorté Prime Latte Bundle (Worth $105.00)",
-        box: "30% off select Decorte + Gift",
-        price: "99.00",
-
+        image_url: "https://static.thcdn.com/images/large/webp//productimg/1600/1600/12436040-2094739621888766.jpg",
+        name: "Daniel Sandler Watercolour Gel Cheek Colour 10ml (Various Shades)",
+        box: "30% off with code DANIEL",
+        price: "27.50",
     },
     {
-        image_url: "https://static.thcdn.com/images/xsmall/webp//productimg/original/13011542-7184857487015749.jpg",
-        name: "Decorté Kimono Yui Eau De Toilette 1.7 fl. oz",
-        box: "30% off select Decorte + Gift",
-        price: "75.00",
-
+        image_url: "https://static.thcdn.com/images/large/webp//productimg/1600/1600/13971588-5624998481683801.jpg",
+        name: "Deck Of Scarlet Metal Leaf Shadow Pot (Various Shades)",
+        box: "20% off with code SCAR",
+        price: "25.00",
+    },
+    {
+        image_url: "https://static.thcdn.com/images/large/webp//productimg/1600/1600/12906102-2084866440066073.jpg",
+        name: "Wander Beauty Skyliner Automatic Gel Eyeliner 0.5 g.",
+        box: "15% off with code WANDE",
+        price: "21.00",
     },
     
 
@@ -176,20 +180,20 @@ var robinData = [
 
 // var cartArray = JSON.parse(localStorage.getItem("cartItems")) || [];
 // var wishArray = JSON.parse(localStorage.getItem("wishItems")) || [];
-reLoadM(robinData);
+reLoadM(productData);
 
-function reLoadM(robinData){
+function reLoadM(productData){
 
 
-
+// console.log(productData)
 
 
 // DATA
 
- displayDatas(robinData);
-function displayDatas(robinData){
+ displayDatas(productData);
+function displayDatas(productData){
     document.querySelector("#container").textContent="";
-    robinData.map(function (data) {
+    productData.map(function (data) {
         var div = document.createElement("div")
         
     
@@ -222,7 +226,7 @@ function displayDatas(robinData){
     
         var btn1 = document.createElement("button")
         btn1.setAttribute("id", "btnwish")
-        btn1.textContent = "Wish"
+        btn1.textContent = "Add to Wishlist"
         btn1.style.display = "block"
         btn1.addEventListener("click", function () {
             wishlistAdd(data);
@@ -253,8 +257,8 @@ function wishlistAdd(data) {
     cartThings.push(data);
     localStorage.setItem("quickbuy1", JSON.stringify(cartArray));
     localStorage.setItem("cartthings", JSON.stringify(cartThings));
-    alert("Item Added");
-    reLoadM(robinData);
+    alert("Item Added to WishList");
+    reLoadM(productData);
 
 }
 
@@ -265,7 +269,7 @@ function cartAdd(data) {
   
     localStorage.setItem("cartthings", JSON.stringify(cartThings));
     alert("added to cart");
-    reLoadM(robinData);
+    reLoadM(productData);
 
 }
 
@@ -303,12 +307,12 @@ document.querySelector("#cartLen").innerHTML=`${cartLength.length}`;
 
 
 
-function navSlideOut(){
-    document.querySelector("#nav-link").style.left="-16px"
-}
-function navSlideIn(){
-   document.querySelector("#nav-link").style.left="-2000px"
-}
+// function navSlideOut(){
+//     document.querySelector("#nav-link").style.left="-16px"
+// }
+// function navSlideIn(){
+//    document.querySelector("#nav-link").style.left="-2000px"
+// }
 
 
 
@@ -329,21 +333,45 @@ function myFunction() {
     }
 }
 
+// Sorting Function 
+
 function Tsort(){
-    var valT=document.querySelector("#sortT").value
-    console.log(valT)
-    if(valT==""){
-        reLoadM(robinData);
-    }else if(valT=="high"){
-        robinData.sort(function(a,b){
-         return (Number(b.price)-Number(a.price))
-     })
-     reLoadM(robinData);
-     
-    }else{
-        robinData.sort(function(a,b){
-            return (Number(a.price)-Number(b.price))
-     })
-     reLoadM(robinData);
+    var selectedsort =document.querySelector("#sortT").value
+   
+    if(selectedsort === "high"){
+        productData = productData.sort(function(a,b){
+            return b.price - a.price
+        })
     }
- }  
+    if(selectedsort === "low"){
+        productData = productData.sort(function(a,b){
+            return a.price - b.price
+        })
+    }
+    reLoadM(productData)
+} 
+
+   
+ 
+
+
+
+ function filterit(){
+    
+    var selected = document.querySelector("#filter").value
+
+    var filteredArr = productData.filter(function(ele){
+        if(selected === ""){
+            return 1
+        }
+        else{
+            return selected === ele.box
+        }
+    })
+    reLoadM(filteredArr);
+
+   }
+
+
+ 
+   

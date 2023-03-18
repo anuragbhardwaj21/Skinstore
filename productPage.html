@@ -27,12 +27,12 @@
     <div id="landingPage-container">
 
      <!--Here I created the row-1 inside we use "UsD" & "Help" in Div-->
-         <div id="row-1">
+     <div id="helpnav">
           
-            <a href="####"><div class="us-USD"> <div id="us-Image"><img src="https://image.shutterstock.com/image-vector/historical-flag-united-states-48-260nw-1597080676.jpg" alt="us-USD Image"></div> us - USD </div></a>
-            <a href="https://www.skinstore.com/help-centre.list "><div class="Help">Help</div></a>
-
-         </div>
+        <a href="####"><div class="us-USD"> <div id="us-Image"><img src="https://image.shutterstock.com/image-vector/historical-flag-united-states-48-260nw-1597080676.jpg" alt="us-USD Image"></div> us - USD </div></a>
+        <a href="https://www.skinstore.com/help-centre.list "><div class="Help">Help</div></a>
+      
+      </div>
 
      <!--Here I created the row-2 inside we use "SkinStore Content" ,"Search Bar" "Account","Cart" & "Nav Bar" in Div-->
 
@@ -56,8 +56,8 @@
                         <button   class="dropbtn" onclick=window.location.href="######" id="ac"><i class="far fa-user"></i> <span>Account</span> </button>
                        
                         <div class="dropdown-content">
-                            <a href="login.html">LOGIN</a>
-                            <a href="registration.html">REGISTER </a>
+                            <a href="loginandsignuppage/login.html">LOGIN</a>
+                            <a href="loginandsignuppage/registration.html">REGISTER </a>
                             <a href="#">Wish List</a>
                             <a href="#">Your Order</a>
                             <a href="#">Your Referrals</a>
@@ -146,33 +146,26 @@
                 <button onclick="myFunction()" id="myBtn">Read more</button>
             <div id="sortingarea">    
                 <div id="FilterAndSortBox">
+                    <div>
+                    <h3>Sort by Price</h3>
                     <select  onchange="Tsort()" id="sortT">
-                        <option value="">Sort By</option>
-                        <option value="high">Price: High to Low</option>
-                        <option value="low">Price: Low to High</option>
+                        <option value="">Sort By Price</option>
+                        <option value="high">High to Low</option>
+                        <option value="low">Low to High</option>
+                    </select></div>
+                    <div>
+                    <h3>Filter by Brand name</h3>
+                    <select id="filter" onchange="filterit()">
+                        <option value="">Filter by Brand Name</option>
+                        <option value="25% off with code LUCKY">CHRISTOPHE ROBIN</option>
+                        <option value="30% off with code DANIEL">DANIEL SANDLER</option>
+                        <option value="20% off with code SCAR">DECK OF SCARLET</option>
+                        <option value="15% off with code WANDE">WANDER BEAUTY</option>
+                        <option value="40% off with code ARDEN">ELIZABETH ARDEN</option>
                     </select>
-                    <input type="text">
-                    <select name="" id="">
-                        <option value="">Skin Product Type</option>
-                        <option value="">Price: High to Low</option>
-                        <option value="">Price: Low to High</option>
-                    </select>
-                    <select name="" id="">
-                        <option value="">Skincar Format</option>
-                        <option value="">Price: High to Low</option>
-                        <option value="">Price: Low to High</option>
-                    </select>
-                    <select name="" id="">
-                        <option value="">Skincare Tools</option>
-                        <option value="">Price: High to Low</option>
-                        <option value="">Price: Low to High</option>
-                    </select>
-                    <select name="" id="">
-                        <option value="">Skin Type</option>
-                        <option value="">Price: High to Low</option>
-                        <option value="">Price: Low to High</option>
-                    </select>
-                    <p>+Filters</p>
+                </div>
+                    
+                    
                 </div>
             </div>
         </div>
@@ -184,7 +177,7 @@
     </div>
 
 
-                <!-- <div id="footerPart">
+                 <div id="footerPart">
                     
 
                     <div class="FooterLine"></div>
@@ -266,7 +259,7 @@
          </div>
          
     </div>
-     -->
+     
 </body>
 </html>
 
