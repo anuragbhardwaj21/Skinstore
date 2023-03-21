@@ -25,8 +25,8 @@ body {
     display: none;
   }
 }
-/* 
-.helpnav a {
+
+/* .helpnav a {
   font-size: 16px;
 
   text-decoration: none;
@@ -49,6 +49,11 @@ body {
   padding-right: 16px;
   padding-left: 16px;
 }
+
+#helpnav:hover{
+    cursor: pointer;
+}
+
 .us-USD:hover{
   background-color: rgb(231, 229, 229);
 }
@@ -79,6 +84,8 @@ body {
       vertical-align: sub;
      
 }
+
+
 
 
 
@@ -680,8 +687,8 @@ body {
     font-size: medium;
   }
 
-  /* .card span {
-  } */
+  .card span {
+  }
 
   .card button {
     padding: 0.5em;
@@ -724,8 +731,8 @@ body {
     font-size: medium;
   }
 
-  /* .card span {
-  } */
+  .card span {
+  }
 
   .card button {
     padding: 0.5em;
@@ -735,7 +742,6 @@ body {
     margin-top: 0.5em;
   }
 }
-
 .skin {
   align-items: center;
 
@@ -766,6 +772,11 @@ body {
   justify-content: center;
   gap: 10em;
 }
+
+.skingift:hover{
+    cursor: pointer;
+}
+
 .skingift2{
   display: flex;
   gap: 5em;

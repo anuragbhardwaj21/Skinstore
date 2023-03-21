@@ -106,7 +106,7 @@ var productData = [
     {
         image_url: "https://static.thcdn.com/images/large/webp//productimg/1600/1600/13461927-1144911419829243.jpg",
         name: "Elizabeth Arden Exclusive Red Carpet Ready Lashes Set",
-        box: "40% off with code ARDE",
+        box: "40% off with code ARDEN",
         price: "125.00",
     },
 
@@ -130,7 +130,7 @@ var productData = [
         image_url: "https://static.thcdn.com/images/large/webp//productimg/1600/1600/13971628-1364998481061634.jpg",
         name: "Deck Of Scarlet Double Take Face Brush",
         box: "20% off with code SCAR",
-        price: "32.000"
+        price: "32.00"
     },
     {
         image_url: "https://static.thcdn.com/images/large/webp//productimg/1600/1600/13909150-1984975453071900.jpg",
@@ -141,7 +141,7 @@ var productData = [
     {
         image_url: "https://static.thcdn.com/images/large/webp//productimg/1600/1600/10801127-9564918723292010.jpg",
         name: "Elizabeth Arden Flawless Finish Sponge On Cream Makeup (23g)",
-        box: "40% off with code ARDE",
+        box: "40% off with code ARDEN",
         price: "30.00",
 
     },
@@ -242,7 +242,10 @@ function displayDatas(productData){
         })
     
         div.append(btn2);
-
+        div.setAttribute("id", "Products-Details")
+        image.addEventListener("click", function () {
+            sendToDetails(data);
+        })
         document.querySelector("#container").append(div)
     
     })
@@ -268,13 +271,17 @@ function cartAdd(data) {
     cartThings.push(data);
   
     localStorage.setItem("cartthings", JSON.stringify(cartThings));
-    alert("added to cart");
+    alert("Item Added to cart");
     reLoadM(productData);
 
 }
 
 
+var cartLength =JSON.parse(localStorage.getItem("cartthings"))
+document.querySelector("#cardAval").innerHTML=`There are currently ${cartLength.length} items in your cart.`;
+document.querySelector("#cartLen").innerHTML=`${cartLength.length}`;
 
+}
 
 
 // console.log(cartArray);
@@ -290,14 +297,7 @@ function cartAdd(data) {
 // ==============================================================================================================================================
 
 
-var cartLength =JSON.parse(localStorage.getItem("cartthings"))
-document.querySelector("#cardAval").innerHTML=`There are currently ${cartLength.length} items in your cart.`;
-document.querySelector("#cartLen").innerHTML=`${cartLength.length}`;
 
-
-
-
-}
 
 
 
@@ -317,21 +317,21 @@ document.querySelector("#cartLen").innerHTML=`${cartLength.length}`;
 
 
 
-function myFunction() {
-    var dots = document.getElementById("dots");
-    var moreText = document.getElementById("more");
-    var btnText = document.getElementById("myBtn");
+// function myFunction() {
+//     var dots = document.getElementById("dots");
+//     var moreText = document.getElementById("more");
+//     var btnText = document.getElementById("myBtn");
 
-    if (dots.style.display === "none") {
-        dots.style.display = "inline";
-        btnText.innerHTML = "Read more";
-        moreText.style.display = "none";
-    } else {
-        dots.style.display = "none";
-        btnText.innerHTML = "Read less";
-        moreText.style.display = "inline";
-    }
-}
+//     if (dots.style.display === "none") {
+//         dots.style.display = "inline";
+//         btnText.innerHTML = "Read more";
+//         moreText.style.display = "none";
+//     } else {
+//         dots.style.display = "none";
+//         btnText.innerHTML = "Read less";
+//         moreText.style.display = "inline";
+//     }
+// }
 
 // Sorting Function 
 
@@ -354,7 +354,7 @@ function Tsort(){
    
  
 
-
+// Filter Function
 
  function filterit(){
     
@@ -374,4 +374,26 @@ function Tsort(){
 
 
  
-   
+   function sendToDetails(data){
+      localStorage.setItem("ProductKiDetails", JSON.stringify(data));
+      window.location.href='detailPage.html'
+   }
+
+
+//    redirect Pages
+
+function redirectToDetails(){
+    window.location.href = "detailPage.html";
+}
+
+function redirectToProduct(){
+    window.location.href = "productPage.html";
+}
+
+function redirectToHome(){
+    window.location.href = "index.html";
+}
+
+function redirectToCart(){
+    window.location.href = "cartPage.html";
+   }

@@ -23,6 +23,7 @@
 </head>
 
 <body>
+    <div id="body">
     
     <div id="landingPage-container">
 
@@ -36,13 +37,13 @@
 
      <!--Here I created the row-2 inside we use "SkinStore Content" ,"Search Bar" "Account","Cart" & "Nav Bar" in Div-->
 
-         <div id="row-2">
+         <div id="row-2" >
              <!--Here I created navAbove inside we use "SkinStore Content" ,"Search Bar" "Account" &"Cart"  Div-->
              
              <div id="navAbove">
                 
-                <div id="skin-col">
-                    <div><a href="https://www.skinstore.com/" style="text-decoration: none; color:#333;">SkinStore</a></div>
+                <div id="skin-col" onclick="redirectToHome()">
+                    <div><a href="index.html" style="text-decoration: none; color:#333;">SkinStore</a></div>
                     <div>part of the <span>LOOKFANTASTIC</span> group</div>
                 </div>
 
@@ -66,9 +67,9 @@
                 </div>
 
                 <div id=c-col>
-                    <div class="dropdown">
+                    <div class="dropdown" onclick="redirectToCart()">
                        
-                        <button  class="dropbtn" onclick=window.location.href="cart.html"  id="cart"><i class="fas fa-cart-arrow-down"></i>  <div id="cartLen">0</div> <span>Cart</span> </button>
+                        <button  class="dropbtn" onclick=window.location.href="cartPage.html"  id="cart"><i class="fas fa-cart-arrow-down"></i>  <div id="cartLen">0</div> <span>Cart</span> </button>
                         <div class="dropdown-content">
                             <a  id="cardAval" href="#">There are currently no items in your cart.</a>
                         </div>
@@ -184,7 +185,7 @@
                     <div class="sochandle">
                         <div id="SocialmediaHandles">
                             <p>Sign up to our website and Start Shopping</p>
-                            <button id="signbtn">Sign Up</button>
+                            <!-- <button id="signbtn">Sign Up</button> -->
                         </div>
                         <div id="conus">
                             <h4>Connect with us</h4>
@@ -217,7 +218,7 @@
                         <div class="footer-col">
                             <h4>About SkinStore</h4>
                             <ul>
-                                <li><a href="AboutUs.html">About Us</a></li>
+                                <li><a href="#">About Us</a></li>
                                 <li><a href="#">Affiliate Program</a></li>
                                 <li><a href="#">Brand Directory</a></li>
                                 <li><a href="#">Coupon Codes</a></li>
@@ -259,7 +260,7 @@
          </div>
          
     </div>
-     
+</div>
 </body>
 </html>
 
