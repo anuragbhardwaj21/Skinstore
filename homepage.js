@@ -101,3 +101,12 @@ var responsiveSlider = function () {
    };
    
    
+// Redirect Pages  
+
+   function redirectToCart(){
+    window.location.href = "cartPage.html";
+   }
+
+   function redirectToProduct(){
+    window.location.href = "productPage.html";
+}

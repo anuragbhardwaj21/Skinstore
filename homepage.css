@@ -20,8 +20,13 @@ body {
 
   height: 1em;
 }
+@media screen and (max-width: 1200px) {
+  .helpnav {
+    display: none;
+  }
+}
 
-.helpnav a {
+/* .helpnav a {
   font-size: 16px;
 
   text-decoration: none;
@@ -33,7 +38,59 @@ body {
   margin-right: 2em;
 
   margin-top: -1px;
+} */
+#helpnav{
+  grid-area: a;  
+  background-color: rgb(242,242,242);
+  display: flex;
+  justify-content: flex-end;
+  height: 32px;
+  /* box-sizing: border-box; */
+  padding-right: 16px;
+  padding-left: 16px;
 }
+
+#helpnav:hover{
+    cursor: pointer;
+}
+
+.us-USD:hover{
+  background-color: rgb(231, 229, 229);
+}
+
+.Help:hover{
+   background-color: rgb(231, 229, 229);
+}
+
+.us-USD,.Help{
+  font-family: "Lato-Light",Helvetica,Arial,sans-serif;
+  display: inline-block;
+  font-size: 14px;
+  line-height: 1.4;
+  font-weight: 300;
+  color: #333; 
+  padding: 7px 16px;
+  /* background-color: darkkhaki; */
+}
+#us-Image{
+  display: inline-block;
+  margin-right: 6px;
+}
+#us-Image>img{
+      display: inline-block;
+      border-radius: 16px;
+      width: 16px;
+      height: 16px;
+      vertical-align: sub;
+     
+}
+
+
+
+
+
+
+
 
 .mainlogo img {
   width: 15em;
@@ -97,14 +154,6 @@ body {
   background-color: transparent;
 
   border: none;
-}
-
-.btn {
-  /* background-color: red '  */
-
-  /* display: flex; */
-
-  /* align-items: center; */
 }
 
 .btn button {
@@ -496,7 +545,35 @@ body {
 
   gap: 2em;
 }
-
+@media screen and (max-width: 810px) {
+  .shopbycategory {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    padding-left: 2em;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 600px) {
+  .shopby {
+    width: 10em;
+    text-align: center;
+    margin-top: 2em;
+    margin-left: 8em;
+    font-size: 2em;
+  }
+  .shopbycategory {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 15em;
+    width: 18em;
+    gap: 2em;
+    justify-content: space-around;
+    justify-items: center;
+    align-content: space-around;
+    align-items: center;
+  }
+}
 .trending {
   text-align: center;
 
@@ -576,7 +653,95 @@ body {
 
   margin-top: 1em;
 }
+@media screen and (max-width: 810px) {
+  .trending {
+    margin-left: 9em;
 
+    text-align: center;
+
+    margin-top: 2em;
+
+    font-size: 2em;
+  }
+  .trendingoffers {
+    width: 810px;
+    margin-left: 6em;
+    margin-right: 3em;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2em;
+    justify-content: space-around;
+    justify-items: center;
+    align-content: space-around;
+    align-items: center;
+  }
+  .card {
+    width: 450px;
+  }
+  .card img {
+    width: 20em;
+    border-radius: 50%;
+  }
+
+  .card p {
+    font-size: medium;
+  }
+
+  .card span {
+  }
+
+  .card button {
+    padding: 0.5em;
+
+    font-size: small;
+
+    margin-top: 0.5em;
+  }
+}
+@media screen and (max-width: 400px) {
+  .trending {
+    width: 10em;
+    text-align: center;
+
+    margin-top: 2em;
+
+    font-size: 2em;
+  }
+  .trendingoffers {
+    width: 810px;
+    margin-left: 4em;
+    margin-right: 3em;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2em;
+    justify-content: space-around;
+    justify-items: center;
+    align-content: space-around;
+    align-items: center;
+  }
+  .card {
+    width: 450px;
+  }
+  .card img {
+    width: 20em;
+    border-radius: 50%;
+  }
+
+  .card p {
+    font-size: medium;
+  }
+
+  .card span {
+  }
+
+  .card button {
+    padding: 0.5em;
+
+    font-size: small;
+
+    margin-top: 0.5em;
+  }
+}
 .skin {
   align-items: center;
 
@@ -602,11 +767,22 @@ body {
 }
 
 .skingift {
+  margin-top: 2em;
   display: flex;
+  justify-content: center;
+  gap: 10em;
+}
 
-  border: 1px solid;
+.skingift:hover{
+    cursor: pointer;
+}
+
+.skingift2{
+  display: flex;
+  gap: 5em;
 }
 .belowicon {
+  margin-top: 3em;
   padding: 1em 1em;
   display: flex;
   gap: 1.9em;
@@ -868,34 +1044,35 @@ body {
 .d1 li:hover {
   background-color: rgba(222, 219, 219, 0.561);
 }
-.belowfooter{
+.belowfooter {
   display: flex;
 }
-.bfl{
+.bfl {
   width: 35.5%;
   margin-left: 13em;
 }
-.bfl p{
+.bfl p {
   font-size: 2.6em;
   color: rgba(0, 0, 0, 0.763);
   margin-bottom: 0;
   font-weight: 800;
 }
-.bfl span{
+.bfl span {
   color: grey;
 }
-.bfr{
+.bfr {
   width: 40%;
   margin-left: 4em;
 }
-.bfr p{
+.bfr p {
   font-weight: 550;
   font-size: medium;
 }
-.imgs{
+.imgs {
   align-items: center;
+  margin-bottom: 4em;
 }
-.imgs img{
+.imgs img {
   height: 3em;
   border-radius: 3px;
   width: 4.1em;

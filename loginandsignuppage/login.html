@@ -7,11 +7,15 @@
     <title>Login</title>
     <link rel="stylesheet" href="login.css">
 
+     <!-- this is the skinStore icon in the title -->
+     <link rel = "icon" href = 
+     "https://www.skinstore.com/favicon.ico?v=skstrus8.3912.4203" 
+             type = "image/x-icon">
 </head>
 <body>
     <div id="nav">
         <div class="conatiner_logo">
-            <a href="\">
+            <a href="/Skinstore/index.html">
                 <img src="https://s1.thcdn.com/enterprise/assets/skstr-global-113e023e-ecc9-45df-abad-eb92ce1956c9-logo-default.svg" alt="">
             </a>
         </div>
@@ -36,7 +40,7 @@
                     <input id="password" type="password" placeholder="Password" required>
                    
                 </div>
-                  <a href="forgot_pass.html">FORGOTTEN YOUR PASSWORD?</a>
+                  <a href="forgot_pass.html">FORGOT YOUR PASSWORD ?</a>
                     <input type="submit" value="SIGN IN" name="contine" id="button">
                    <p>Or, Continue with</p>
                    <div>
@@ -93,16 +97,16 @@
             console.log(loginArr[i].email,email,loginArr[i].password,password)
             if(loginArr[i].email==email && loginArr[i].password==password){
                 alert("Login Successfully Done");
-                window.location.href="http://127.0.0.1:5500/Skinstore/homepage.html#####"
+                window.location.href="/Skinstore/index.html"
                 break;
             }else{
                 if((loginArr.length-1)==i){
-                    alert("check email and password correct or Wrong else goto REGISTER");
+                    alert("Incorrect email or password or You Have Not Registered Yet");
                 }
             }
         }
         }else{
-            alert("check email and password correct or Wrong else goto REGISTER");
+            alert("Incorrect email or password or You Have Not Registered Yet");
         }
 
     }

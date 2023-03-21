@@ -23,26 +23,27 @@
 </head>
 
 <body>
+    <div id="body">
     
     <div id="landingPage-container">
 
      <!--Here I created the row-1 inside we use "UsD" & "Help" in Div-->
-         <div id="row-1">
+     <div id="helpnav">
           
-            <a href="####"><div class="us-USD"> <div id="us-Image"><img src="https://image.shutterstock.com/image-vector/historical-flag-united-states-48-260nw-1597080676.jpg" alt="us-USD Image"></div> us - USD </div></a>
-            <a href="https://www.skinstore.com/help-centre.list "><div class="Help">Help</div></a>
-
-         </div>
+        <a href="####"><div class="us-USD"> <div id="us-Image"><img src="https://image.shutterstock.com/image-vector/historical-flag-united-states-48-260nw-1597080676.jpg" alt="us-USD Image"></div> us - USD </div></a>
+        <a href="https://www.skinstore.com/help-centre.list "><div class="Help">Help</div></a>
+      
+      </div>
 
      <!--Here I created the row-2 inside we use "SkinStore Content" ,"Search Bar" "Account","Cart" & "Nav Bar" in Div-->
 
-         <div id="row-2">
+         <div id="row-2" >
              <!--Here I created navAbove inside we use "SkinStore Content" ,"Search Bar" "Account" &"Cart"  Div-->
              
              <div id="navAbove">
                 
-                <div id="skin-col">
-                    <div><a href="https://www.skinstore.com/" style="text-decoration: none; color:#333;">SkinStore</a></div>
+                <div id="skin-col" onclick="redirectToHome()">
+                    <div><a href="index.html" style="text-decoration: none; color:#333;">SkinStore</a></div>
                     <div>part of the <span>LOOKFANTASTIC</span> group</div>
                 </div>
 
@@ -56,8 +57,8 @@
                         <button   class="dropbtn" onclick=window.location.href="######" id="ac"><i class="far fa-user"></i> <span>Account</span> </button>
                        
                         <div class="dropdown-content">
-                            <a href="login.html">LOGIN</a>
-                            <a href="registration.html">REGISTER </a>
+                            <a href="loginandsignuppage/login.html">LOGIN</a>
+                            <a href="loginandsignuppage/registration.html">REGISTER </a>
                             <a href="#">Wish List</a>
                             <a href="#">Your Order</a>
                             <a href="#">Your Referrals</a>
@@ -66,9 +67,9 @@
                 </div>
 
                 <div id=c-col>
-                    <div class="dropdown">
+                    <div class="dropdown" onclick="redirectToCart()">
                        
-                        <button  class="dropbtn" onclick=window.location.href="cart.html"  id="cart"><i class="fas fa-cart-arrow-down"></i>  <div id="cartLen">0</div> <span>Cart</span> </button>
+                        <button  class="dropbtn" onclick=window.location.href="cartPage.html"  id="cart"><i class="fas fa-cart-arrow-down"></i>  <div id="cartLen">0</div> <span>Cart</span> </button>
                         <div class="dropdown-content">
                             <a  id="cardAval" href="#">There are currently no items in your cart.</a>
                         </div>
@@ -146,33 +147,26 @@
                 <button onclick="myFunction()" id="myBtn">Read more</button>
             <div id="sortingarea">    
                 <div id="FilterAndSortBox">
+                    <div>
+                    <h3>Sort by Price</h3>
                     <select  onchange="Tsort()" id="sortT">
-                        <option value="">Sort By</option>
-                        <option value="high">Price: High to Low</option>
-                        <option value="low">Price: Low to High</option>
+                        <option value="">Sort By Price</option>
+                        <option value="high">High to Low</option>
+                        <option value="low">Low to High</option>
+                    </select></div>
+                    <div>
+                    <h3>Filter by Brand name</h3>
+                    <select id="filter" onchange="filterit()">
+                        <option value="">Filter by Brand Name</option>
+                        <option value="25% off with code LUCKY">CHRISTOPHE ROBIN</option>
+                        <option value="30% off with code DANIEL">DANIEL SANDLER</option>
+                        <option value="20% off with code SCAR">DECK OF SCARLET</option>
+                        <option value="15% off with code WANDE">WANDER BEAUTY</option>
+                        <option value="40% off with code ARDEN">ELIZABETH ARDEN</option>
                     </select>
-                    <input type="text">
-                    <select name="" id="">
-                        <option value="">Skin Product Type</option>
-                        <option value="">Price: High to Low</option>
-                        <option value="">Price: Low to High</option>
-                    </select>
-                    <select name="" id="">
-                        <option value="">Skincar Format</option>
-                        <option value="">Price: High to Low</option>
-                        <option value="">Price: Low to High</option>
-                    </select>
-                    <select name="" id="">
-                        <option value="">Skincare Tools</option>
-                        <option value="">Price: High to Low</option>
-                        <option value="">Price: Low to High</option>
-                    </select>
-                    <select name="" id="">
-                        <option value="">Skin Type</option>
-                        <option value="">Price: High to Low</option>
-                        <option value="">Price: Low to High</option>
-                    </select>
-                    <p>+Filters</p>
+                </div>
+                    
+                    
                 </div>
             </div>
         </div>
@@ -184,14 +178,14 @@
     </div>
 
 
-                <!-- <div id="footerPart">
+                 <div id="footerPart">
                     
 
                     <div class="FooterLine"></div>
                     <div class="sochandle">
                         <div id="SocialmediaHandles">
                             <p>Sign up to our website and Start Shopping</p>
-                            <button id="signbtn">Sign Up</button>
+                            <!-- <button id="signbtn">Sign Up</button> -->
                         </div>
                         <div id="conus">
                             <h4>Connect with us</h4>
@@ -224,7 +218,7 @@
                         <div class="footer-col">
                             <h4>About SkinStore</h4>
                             <ul>
-                                <li><a href="AboutUs.html">About Us</a></li>
+                                <li><a href="#">About Us</a></li>
                                 <li><a href="#">Affiliate Program</a></li>
                                 <li><a href="#">Brand Directory</a></li>
                                 <li><a href="#">Coupon Codes</a></li>
@@ -266,7 +260,7 @@
          </div>
          
     </div>
-     -->
+</div>
 </body>
 </html>
 

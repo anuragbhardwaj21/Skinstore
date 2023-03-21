@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+ <head>
+
+  <meta charset="UTF-8" />
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link
+
+   href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
+
+   rel="stylesheet"
+
+  />
+
+  <title>Checkout</title>
+
+   <!-- this is the skinStore icon in the title -->
+   <link rel = "icon" href = 
+   "https://www.skinstore.com/favicon.ico?v=skstrus8.3912.4203" 
+           type = "image/x-icon">
+
+  <style>
+.tt{
+    text-align: center;
+}
+.payment-btn {
+    font-size: 35px;
+    width: 100%;
+    height: 60px;
+  display: block;
+  margin: 0 auto;
+  padding: 12px 24px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  padding-right: 30%;
+  padding-left: 30%;
+  text-decoration: none;
+}
+
+.payment-btn:hover {
+  background-color: #42479a;
+  cursor: pointer;
+}
+
+   body {
+
+    font-family: "Lato", sans-serif;
+
+    background-color: rgba(232, 229, 229, 0.482);
+
+   }
+
+   .maindiv {
+    
+    width: 112vh;
+
+    left: 0;
+
+    right: 0;
+
+    bottom: 0;
+
+    top: 0;
+
+    margin: auto;
+
+    padding-top: 3em;
+    padding-left: 15em;
+
+    display: flex;
+
+    gap: 3em;
+
+   }
+
+   .logsign {
+
+    width: 70vh;
+
+    padding-left: 3em;
+
+   }
+
+   .log1 {
+
+    background-color: white;
+
+    margin-bottom: 2em;
+
+    padding: 2em 2em;
+
+   }
+
+   .log1 p {
+
+    margin-top: -5px;
+
+    font-weight: 700;
+
+    font-size: 1.5em;
+
+   }
+
+   .log1 span {
+
+    color: rgba(57, 56, 56, 0.835);
+
+    margin-bottom: -2em;
+
+   }
+
+   .log1 button {
+
+    font-size: 15px;
+
+    border: none;
+
+    background-color: rgb(61, 59, 59);
+
+    color: rgb(255, 255, 255);
+
+    font-weight: 100;
+
+    text-align: center;
+
+    padding: 0.5em 0.5em;
+
+    text-decoration: none;
+
+    margin-left: 5px;
+
+   }
+
+   .ordersum {
+
+    background-color: white;
+
+    width: 30vh;
+
+    height: 35vh;
+
+    padding: 2em 2em;
+
+   }
+
+   .ordersum p {
+
+    font-weight: 550;
+
+    font-size: 1.1em;
+
+    margin-top: 2.5em;
+
+   }
+
+   .ordersum span {
+
+    color: rgba(65, 63, 63, 0.935);
+
+   }
+
+
+
+   .checkguest {
+
+    border-top: 4px solid;
+
+    background-color: white;
+
+    padding: 2em 2em;
+
+   }
+
+   .checkguest p:nth-child(1) {
+
+    font-weight: 700;
+
+    font-size: 1.5em;
+
+    margin-top: -7px;
+
+    margin-bottom: -7px;
+
+    color: rgb(49, 48, 48);
+
+   }
+
+   .checkguest p:nth-child(2) {
+
+    color: rgba(57, 56, 56, 0.835);
+
+    margin-bottom: 2em;
+
+   }
+
+   .checkguest p:nth-child(3) {
+
+    font-weight: 700;
+
+    font-size: 1.2em;
+
+    margin-top: -7px;
+
+    color: rgb(49, 48, 48);
+
+   }
+
+   .checkguest p:nth-child(4),
+
+   .checkguest p:nth-child(9),
+
+   .checkguest p:nth-child(11),
+
+   .checkguest p:nth-child(13),
+
+   .checkguest p:nth-child(16) {
+
+    margin-top: 2em;
+
+    color: rgba(57, 56, 56, 0.907);
+
+    margin-bottom: 5px;
+
+   }
+
+   .checkguest p:nth-child(6),
+
+   .checkguest p:nth-child(15),
+
+   .checkguest p:nth-child(18) {
+
+    color: rgba(57, 56, 56, 0.835);
+
+    margin-top: 5px;
+
+   }
+
+   .checkguest input {
+
+    width: 100%;
+
+    height: 3em;
+
+    border-radius: 5px;
+
+    border: 1.2px solid rgba(146, 145, 145, 0.876);
+
+   }
+
+   .checkguest select {
+
+    width: 100%;
+
+    height: 2em;
+
+    border-radius: 5px;
+
+    font-size: 1em;
+
+    color: rgba(57, 56, 56, 0.835);
+
+    border: 1.2px solid rgba(146, 145, 145, 0.876);
+
+   }
+
+   .b button {
+
+    background-color: transparent;
+
+    border: none;
+
+    border-bottom: 2px solid;
+
+    margin: 1em 0;
+
+    padding: 2em 2em;
+
+    font-size: 1.3em;
+
+    font-weight: 100;
+
+   }
+
+   .doption {
+
+    background-color: white;
+
+    padding: 2em 2em;
+
+    margin-top: 2em;
+
+    padding-bottom: 1em;
+
+   }
+
+   .doption p:nth-child(1) {
+
+    font-weight: 700;
+
+    font-size: 1.2em;
+
+    margin-top: -7px;
+
+    color: rgb(49, 48, 48);
+
+   }
+
+   .doption p:nth-child(2) {
+
+    background-color: rgba(155, 203, 239, 0.346);
+
+    border-radius: 5px;
+
+    height: 4em;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    color: rgb(0, 101, 173);
+
+   }
+
+   .selectpayment {
+
+    background-color: white;
+
+    padding: 2em 2em;
+
+    margin-top: 2em;
+
+    padding-bottom: 1em;
+
+   }
+
+   .selectpayment p {
+
+    font-weight: 700;
+
+    font-size: 1.2em;
+
+    margin-top: -7px;
+
+    color: rgb(49, 48, 48);
+
+   }
+
+   .payment {
+
+    border: 4px solid gray;
+
+    padding: 2em;
+
+    border-radius: 5px;
+
+   }
+
+   .payment p:nth-child(1) {
+
+    font-weight: 550;
+
+    font-size: 1em;
+
+   }
+
+   .payment p:nth-child(2),
+
+   .payment p:nth-child(4),
+
+   .payment p:nth-child(6),
+
+   .payment p:nth-child(11) {
+
+    margin-top: 2em;
+
+    color: rgba(57, 56, 56, 0.907);
+
+    margin-bottom: 5px;
+
+    font-size: medium;
+
+    font-weight: 500;
+
+   }
+
+   .payment input {
+
+    width: 100%;
+
+    height: 3em;
+
+    border-radius: 5px;
+
+    border: 1.2px solid rgba(146, 145, 145, 0.876);
+
+   }
+
+   .payment select{
+
+    width: 25%;
+
+    padding: 5px;
+
+    font-size: large;
+
+   }
+
+   .check {
+
+    display: flex;
+
+    justify-content: center;
+
+   }
+
+   .check p {
+
+    margin: 0;
+
+    padding: 1em 1em;
+
+    font-weight: 200;
+
+   }
+
+   .submitorder {
+
+    background-color: white;
+
+    padding: 2em 2em;
+
+    margin-top: 2em;
+
+    padding-bottom: 1em;
+
+   }
+
+   .submitorder button {
+
+    font-size: 15px;
+
+    border: none;
+
+    background-color: rgb(61, 59, 59);
+
+    color: rgb(255, 255, 255);
+
+    font-weight: 10;
+
+    text-align: center;
+
+    padding: 1.5em 1.5em;
+
+    text-decoration: none;
+
+    width: 10%;
+
+   }
+   .zc{
+    background-color: rgba(252, 252, 252, 0.346);
+
+border-radius: 5px;
+
+height: 4em;
+
+display: flex;
+
+justify-content: center;
+
+align-items: center;
+
+color: rgb(0, 101, 173);
+
+   }
+   #Name{
+    background-color: #cecfe0;
+    height: 2em
+   }
+   h5{
+    text-align: center;
+   }
+   #nav{
+    width: 100%;
+    height: 80px;
+    background-color: white;
+}
+.conatiner_logo img{
+    width: 500px;
+    height: 60px;
+    margin: 10px 0 0 5px;
+}
+
+input{
+    background-color: white;
+}
+  </style>
+
+ </head>
+
+ <body>
+    <div id="nav" >
+        <div class="conatiner_logo" >
+            <a href="index.html">
+                <img src="https://s1.thcdn.com/enterprise/assets/skstr-global-113e023e-ecc9-45df-abad-eb92ce1956c9-logo-default.svg" alt="">
+            </a>
+        </div>
+    </div>
+  
+  <div class="maindiv">
+
+   <div class="logsign">
+
+    <div class="log1">
+
+     <p>Login or Sign up</p>
+
+     <span
+
+      >Checkout faster with saved details and get access to exclusive
+
+      offers</span
+
+     >
+
+     <!-- <button>LOGIN/SIGN UP</button> -->
+
+    </div>
+
+    <div class="checkguest">
+
+     <p>Checkout as a guest</p>
+
+     <p>
+
+      Complete your order without signing up, or sign up after payment.
+
+     </p>
+
+     <p>1. Email and delivery address</p>
+
+     <form>
+                   
+        <label>*Email Address</label>
+        <div class="c1">
+        <input id="Name" type="text" placeholder="Email Address" required>
+        </div>
+     </form>
+     <p>We'll send the purchase receipt to this email.</p>
+
+     <span>*Country/Region</span>
+
+     <select>
+
+      <option value="India">India</option>
+
+      <option value="United States">United States</option>
+
+      <option value="United Kingdom">United Kingdom</option>
+
+      <option value="China">China</option>
+
+      <option value="Taiwan">Taiwan</option>
+
+      <option value="Singapore">Singapore</option>
+
+      <option value="Korea">Korea</option>
+
+      <option value="Japan">Japan</option>
+
+      <option value="Hong Kong">Hong Kong</option>
+
+     </select>
+
+     
+     <form>
+        
+                   <br>
+        <label>*Full Name</label>
+        <div class="c1">
+        <input id="Name" type="text" placeholder="Name" required>
+
+        </div></form>
+
+     
+
+        <form>
+        
+            <br>
+ <label>Zip Code/Postcode</label>
+ <div class="c1">
+ <input id="Name" type="name" placeholder="123456" >
+
+ </div></form>
+
+ <form>
+        
+    <br>
+<label>Company Name</label>
+<div class="c1">
+<input id="Name" type="text" placeholder="Name" >
+
+</div></form>
+<form>
+        
+    <br>
+<label>*Apartment/Suite number</label>
+<div class="c1">
+<input id="Name" type="text" placeholder="123" required>
+
+</div></form>
+<form>
+        
+    <br>
+<label>*Address</label>
+<div class="c1">
+<input id="Name" type="text" placeholder="Address" required>
+
+</div></form>
+<form>
+        
+    <br>
+<label>Address2</label>
+<div class="c1">
+<input id="Name" type="text" placeholder="Address2" >
+
+</div></form>
+<form>
+        
+    <br>
+<label>*Town/City</label>
+<div class="c1">
+<input id="Name" type="text" placeholder="Name" required>
+
+</div></form>
+
+<form>
+        
+    <br>
+<label>*Contact Number</label>
+<div class="c1">
+<input id="Name" type="text" placeholder="1234567890" required>
+
+</div></form>
+
+     <p><u>Why do we need your number?</u></p>
+
+    </div>
+
+    <div class="doption">
+
+     <p>2. Select Delivery Option</p>
+     
+     
+     <p class="zc">
+        
+        <input class="tc" style="width: 152px; height: 2em; margin-left: -25%; " type="checkbox">
+        Standard Delivary <h5>Delivered within 8-12 working days</h5>
+        
+     </p>
+    
+
+    </div>
+
+    <div class="selectpayment">
+
+     <p>3. Select Payment Method</p>
+
+     
+     <div class="payment">
+
+      <p>Credit/Debit Card</p>
+
+      <form>
+        
+        <br>
+<label>*Card Number</label>
+<div class="c1">
+<input id="Name" type="text" placeholder="1234567890" required>
+
+</div></form>
+
+<form>
+        
+    <br>
+<label> *Name on Card</label>
+<div class="c1">
+<input id="Name" type="text" placeholder="Name" required>
+
+</div></form>
+      <p>*Expiry Date</p>
+      <br>
+
+      <label  for="month">Month:</label>
+
+      <select id="month" name="month">
+
+       <option value="">Month</option>
+
+       <option value="01">January</option>
+
+       <option value="02">February</option>
+
+       <option value="03">March</option>
+
+       <option value="04">April</option>
+
+       <option value="05">May</option>
+
+       <option value="06">June</option>
+
+       <option value="07">July</option>
+
+       <option value="08">August</option>
+
+       <option value="09">September</option>
+
+       <option value="10">October</option>
+
+       <option value="11">November</option>
+
+       <option value="12">December</option>
+
+      </select>
+
+
+
+      <label for="year">Year:</label>
+
+      <select id="year" name="year">
+
+       <option value="">Year</option>
+
+       <option value="2023">2023</option>
+
+       <option value="2024">2024</option>
+
+       <option value="2025">2025</option>
+
+       <option value="2026">2026</option>
+
+       <option value="2027">2027</option>
+
+       <option value="2028">2028</option>
+
+       <option value="2029">2029</option>
+
+       <option value="2030">2030</option>
+
+       <option value="2031">2031</option>
+
+       <option value="2032">2032</option>
+
+       <option value="2033">2033</option>
+
+       <option value="2034">2034</option>
+
+      </select>
+<br>
+<form>
+        
+    <br>
+<label>*Security Code(CV4)<Code></Code></label>
+<div class="c1">
+<input id="Name" type="text" placeholder="4567" required>
+
+</div></form>
+
+      <br>
+      <input class="tc" style="width: 152px; height: 2em; margin-left: -18%; " type="checkbox">
+
+       <p style="font-weight: 300;">Use my shipping address as my cardholder address</p>
+     
+      </div>
+
+     </div>
+     <br>
+   <a href="payment.html" style="text-decoration: none;"> <button class="payment-btn">Pay Now</button></a>
+    </div>
+
+  
+    </div>
+
+   </div>
+
+   <p class="tt">By placing this order, you are confirming that you agree to our and </p> 
+   <h5 class="tt">and Conditions and Privacy Policy.</h5>
+
+ </body>
+
+</html>

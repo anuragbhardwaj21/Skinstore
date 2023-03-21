@@ -37,20 +37,20 @@
 
     <link rel="stylesheet" href="homepage.css" />
 
-    <link
-      rel="icon"
-      href="https://s1.thcdn.com/enterprise/assets/skstr-global-0ac8b07e-22db-4a8e-a16e-76e6407a52de-logo-favicon.png"
-      type="image/x-icon"
-    />
+     <!-- this is the skinStore icon in the title -->
+     <link rel = "icon" href = 
+     "https://www.skinstore.com/favicon.ico?v=skstrus8.3912.4203" 
+             type = "image/x-icon">
 
     <script src="homepage.js"></script>
   </head>
 
   <body>
-    <div class="helpnav">
-      <a href="#">us-USD</a>
-
-      <a href="#">Help</a>
+    <div id="helpnav">
+          
+      <a href="index.html"><div class="us-USD"> <div id="us-Image"><img src="https://image.shutterstock.com/image-vector/historical-flag-united-states-48-260nw-1597080676.jpg" alt="us-USD Image"></div> us - USD </div></a>
+      <a href="https://www.skinstore.com/help-centre.list "><div class="Help">Help</div></a>
+    
     </div>
 
     <div class="abovenav">
@@ -85,7 +85,7 @@
           </button>
         </a>
 
-        <button>
+        <button onclick="redirectToCart()">  
           <img
             src="https://cdn-icons-png.flaticon.com/512/5614/5614349.png"
             alt=""
@@ -334,7 +334,7 @@
 
   </div> -->
 
-    <div id="someOtherOffer">
+    <div id="someOtherOffer" onclick="redirectToProduct()">
       <a class="slideOffers" href="#####">
         <div>
           <i class="fa-solid fa-truck"></i> FREE US Shipping Over $49
@@ -356,7 +356,7 @@
       >
     </div>
 
-    <div class="latenight">
+    <div class="latenight" onclick="redirectToProduct()">
       <p>
         <b
           >LATE NIGHT SHOPPING! Save 25% off with code LATE25 | Offer ends at
@@ -381,7 +381,7 @@
               $108) when you spend $130 or more.
             </p>
 
-            <button>SHOP ALL</button>
+            <button onclick="redirectToProduct()">SHOP ALL</button>
           </div>
 
           <img
@@ -404,7 +404,7 @@
               <b>LUCKY.</b>
             </p>
 
-            <button>SHOP NOW</button>
+            <button onclick="redirectToProduct()">SHOP NOW</button>
           </div>
 
           <img
@@ -440,7 +440,7 @@
               >*Special offer, limited time only.</span
             >
 
-            <button>SHOP ALL</button>
+            <button onclick="redirectToProduct()">SHOP ALL</button>
           </div>
 
           <img
@@ -459,7 +459,7 @@
       <p>Shop By Category</p>
     </div>
 
-    <div class="shopbycategory">
+    <div class="shopbycategory" onclick="redirectToProduct()">
       <img
       src=https://static.thcdn.com/images/small/webp/widgets/121-us/45/Page-001-062345.png
       alt="Skincare" width="205px" height="205px"/> <img
@@ -479,7 +479,7 @@
       <p>Trending Offers</p>
     </div>
 
-    <div class="trendingoffers">
+    <div class="trendingoffers" onclick="redirectToProduct()">
       <div class="card">
         <img
           src="https://static.thcdn.com/images/small/webp/widgets/121-us/32/original-500x500_Roundel-045732.jpg"
@@ -494,10 +494,10 @@
           visibly smoother and firmer.</span
         >
 
-        <button>SHOP NOW</button>
+        <button onclick="redirectToProduct()">SHOP NOW</button>
       </div>
 
-      <div class="card">
+      <div class="card" onclick="redirectToProduct()">
         <img
           src="https://static.thcdn.com/images/small/webp/widgets/121-us/44/STDCRE-14250-CR-JH-Creative-SKU-Batching-Shot-4-600x600-EMAIL-045744.png"
           alt=""
@@ -511,10 +511,10 @@
           SLS.</span
         >
 
-        <button>SHOP NOW</button>
+        <button onclick="redirectToProduct()"> SHOP NOW</button>
       </div>
 
-      <div class="card">
+      <div class="card" onclick="redirectToProduct()">
         <img
           src="https://static.thcdn.com/images/small/webp/widgets/121-us/27/IGY032-EB-LF-US-May-Batch-shot-04-380x312_copy-112530-123241-050227.jpg"
           alt=""
@@ -527,10 +527,10 @@
           to help tone, firm and smooth your skin.</span
         >
 
-        <button>SHOP NOW</button>
+        <button onclick="redirectToProduct()">SHOP NOW</button>
       </div>
 
-      <div class="card">
+      <div class="card" onclick="redirectToProduct()">
         <img
           src="https://static.thcdn.com/images/small/webp/widgets/121-us/09/original-SS_subpanels__%2813%29-053909.png"
           alt=""
@@ -543,10 +543,10 @@
           using nutrient antioxidants.</span
         >
 
-        <button>SHOP NOW</button>
+        <button onclick="redirectToProduct()">SHOP NOW</button>
       </div>
 
-      <div class="card">
+      <div class="card" onclick="redirectToProduct()">
         <img
           src="https://static.thcdn.com/images/small/webp/widgets/121-us/53/original-SS_subpanels__%2817%29-070753.png"
           alt=""
@@ -556,10 +556,10 @@
 
         <span>Check out Elemis' tried and trued fan favorite products!</span>
 
-        <button>SHOP NOW</button>
+        <button onclick="redirectToProduct()">SHOP NOW</button>
       </div>
 
-      <div class="card">
+      <div class="card" onclick="redirectToProduct()">
         <img
           src="https://static.thcdn.com/images/small/webp/widgets/121-us/58/original-SS_subpanels__%2814%29-054358.png"
           alt=""
@@ -573,51 +573,97 @@
           transformation.</span
         >
 
-        <button>SHOP NOW</button>
+        <button onclick="redirectToProduct()">SHOP NOW</button>
       </div>
     </div>
 
-    <div class="skin">
+    <div class="skin" onclick="redirectToProduct()">
       <p>SkinCeuticals Gift</p>
 
       <span
-        >Receive a complimentary SkinCeuticals Daily Brightening UV Defense Sun
-        Cream SPF 30 4ml when you spend $175 or more on the brand.</span
+        >Receive a complimentary SkinCeuticals Daily Brightening UV Defense
+        SunCream SPF 30 4ml when you spend $175 or more on the brand.</span
       >
     </div>
 
     <div class="skingift">
-      <div>
+      <div class="skingift1">
         <img
           src="https://static.thcdn.com/images/medium/webp/widgets/121-us/20/Untitled_design_%289%29-084920.png"
           alt=""
         />
       </div>
 
-      <div></div>
+      <div class="skingift2">
+        <div class="card1">
+          <img
+            src="https://static.thcdn.com/images/small/webp//productimg/original/11535230-6345037123306207.jpg"
+            alt=""
+          />
+
+          <p>SkinCeuticals Gentle Cleanser 6.8 fl. oz</p>
+
+          <button>SkinCeuticals Gift</button>
+
+          <p>$36.00</p>
+
+          <span>PRE-ORDER NOW</span>
+        </div>
+
+        <div class="card1">
+          <img
+            src="https://static.thcdn.com/images/small/webp//productimg/original/11535233-4425037123487767.jpg"
+            alt=""
+          />
+
+          <p>SkinCeuticals Purifying Cleanser 6.8 oz</p>
+
+          <button>Save 60%</button>
+
+          <p>$185.00</p>
+
+          <span>QUICK BUY</span>
+        </div>
+      </div>
     </div>
 
-    <div class="belowicon">
+    <div class="belowicon" onclick="redirectToProduct()">
+      <img
+        src="https://static.thcdn.com/images/small/webp/widgets/121-us/05/220322-ELTAMD-LOGO-RGB-01-065127-091005.png"
+        alt=""
+      />
 
-   <img src="https://static.thcdn.com/images/small/webp/widgets/121-us/05/220322-ELTAMD-LOGO-RGB-01-065127-091005.png" alt="">
+      <img
+        src="https://static.thcdn.com/images/small/webp/widgets/121-us/19/180x72_4_233548301_CA_SS_Logo_Amend_BAU_THG0030424-041301-124116-063126-091019.png"
+        alt=""
+      />
 
-   <img src="https://static.thcdn.com/images/small/webp/widgets/121-us/19/180x72_4_233548301_CA_SS_Logo_Amend_BAU_THG0030424-041301-124116-063126-091019.png" alt="">
+      <img
+        src="https://static.thcdn.com/images/small/webp/widgets/121-us/55/iSCLINICAL_Logo_Blue-300x280-092155.png"
+        alt=""
+      />
 
-   <img src="https://static.thcdn.com/images/small/webp/widgets/121-us/55/iSCLINICAL_Logo_Blue-300x280-092155.png" alt="">
+      <img
+        src="https://static.thcdn.com/images/small/webp/widgets/121-us/46/original-NF_Skinstore_Banner_Logo_Color_320x140-01-011402-010546.png"
+        alt=""
+      />
 
-   <img src="https://static.thcdn.com/images/small/webp/widgets/121-us/46/original-NF_Skinstore_Banner_Logo_Color_320x140-01-011402-010546.png" alt="">
+      <img
+        src="https://static.thcdn.com/images/small/webp/widgets/121-us/08/original-original-logo-1024x383-035229-063318-092208.png"
+        alt=""
+      />
 
-   <img src="https://static.thcdn.com/images/small/webp/widgets/121-us/08/original-original-logo-1024x383-035229-063318-092208.png" alt="">
-
-   <img src="https://static.thcdn.com/images/small/webp/widgets/121-us/36/NEOCUTIS-Logo_PMS-092536.png" alt="">
-
-  </div>
+      <img
+        src="https://static.thcdn.com/images/small/webp/widgets/121-us/36/NEOCUTIS-Logo_PMS-092536.png"
+        alt=""
+      />
+    </div>
 
     <div class="best">
       <p>Best Sellers</p>
     </div>
 
-    <div class="bestcard">
+    <div class="bestcard" onclick="redirectToProduct()">
       <div class="card1">
         <img
           src="https://static.thcdn.com/images/small/webp//productimg/original/14203964-1765036091807105.jpg"
@@ -630,10 +676,10 @@
 
         <p>$185.00</p>
 
-        <span>PRE-ORDER NOW</span>
+        <span onclick="redirectToProduct()">PRE-ORDER NOW</span>
       </div>
 
-      <div class="card1">
+      <div class="card1" onclick="redirectToProduct()">
         <img
           src="https://static.thcdn.com/images/small/webp//productimg/original/10787030-1204867600719936.jpg"
           alt=""
@@ -645,7 +691,7 @@
 
         <p>$185.00</p>
 
-        <span>QUICK BUY</span>
+        <span onclick="redirectToProduct()">QUICK BUY</span>
       </div>
 
       <div class="card1">
@@ -663,7 +709,7 @@
 
         <p>$182.00</p>
 
-        <span>QUICK BUY</span>
+        <span onclick="redirectToProduct()">QUICK BUY</span>
       </div>
 
       <div class="card1">
@@ -678,13 +724,13 @@
 
         <p>$68.00</p>
 
-        <span>QUICK BUY</span>
+        <span onclick="redirectToProduct()">QUICK BUY</span>
       </div>
     </div>
 
     <div class="span2">VIEW ALL</div>
 
-    <div class="imgbutton">
+    <div class="imgbutton" onclick="redirectToProduct()">
       <a href=""
         ><img
           src="https://static.thcdn.com/images/xlarge/webp/widgets/121-us/32/original-0308-STDCRE32346-SS-AH-SkinStore-Concierge-Banners-1180x200-084632.jpg"
@@ -692,13 +738,17 @@
       /></a>
     </div>
 
-    <hr style="border: 0.5px solid" />
+    
 
+<!-------------  FOOTER  -------------->
+
+
+<hr style="border: 0.5px solid" />
     <div class="footer">
       <div class="upperleft">
         <p>Sign up to our email list and receive 20% off your next order</p>
 
-        <button>SIGN UP</button>
+        <!-- <button>SIGN UP</button> -->
       </div>
 
       <div class="upperright">
@@ -795,19 +845,48 @@
       <div class="bfr">
         <p>Pay securely with</p>
         <div class="imgs">
-          <img src="https://s1.thcdn.com/checkout/resources/images/57987be4eb98b4c77644d93d92df80fa.svg" alt="">
-          <img src="https://s1.thcdn.com/checkout/resources/images/932e82ef072c7df18e91e66b96dfdf5d.svg" alt="">
-          <img src="https://s1.thcdn.com/checkout/resources/images/0528692e7541ff3755880b3408793969.svg" alt="">
-          <img src="https://s1.thcdn.com/checkout/resources/images/8ba3dc816042268141a2205e3bfc3971.svg" alt="">
-          <img src="https://s1.thcdn.com/checkout/resources/images/248074ffdeeeaeffed9c5db35f35fe45.svg" alt="">
-          <img src="https://s1.thcdn.com/checkout/resources/images/6732c0137a7dab50b23daf1337fe2f30.svg" alt="">
-          <img src="https://s1.thcdn.com/checkout/resources/images/6528547f8322e9cf64458725f0a72827.svg" alt="">
-          <img src="https://s1.thcdn.com/checkout/resources/images/959a8e732266683b799128acf46e03fd.svg" alt="">
-          <img src="https://s1.thcdn.com/checkout/resources/images/6732c0137a7dab50b23daf1337fe2f30.svg" alt="">
-          <img src="https://s1.thcdn.com/checkout/resources/images/5ba5f9cd0c43d9f966774630aa65d7c6.svg" alt="">
+          <img
+            src="https://s1.thcdn.com/checkout/resources/images/57987be4eb98b4c77644d93d92df80fa.svg"
+            alt=""
+          />
+          <img
+            src="https://s1.thcdn.com/checkout/resources/images/932e82ef072c7df18e91e66b96dfdf5d.svg"
+            alt=""
+          />
+          <img
+            src="https://s1.thcdn.com/checkout/resources/images/0528692e7541ff3755880b3408793969.svg"
+            alt=""
+          />
+          <img
+            src="https://s1.thcdn.com/checkout/resources/images/8ba3dc816042268141a2205e3bfc3971.svg"
+            alt=""
+          />
+          <img
+            src="https://s1.thcdn.com/checkout/resources/images/248074ffdeeeaeffed9c5db35f35fe45.svg"
+            alt=""
+          />
+          <img
+            src="https://s1.thcdn.com/checkout/resources/images/6732c0137a7dab50b23daf1337fe2f30.svg"
+            alt=""
+          />
+          <img
+            src="https://s1.thcdn.com/checkout/resources/images/6528547f8322e9cf64458725f0a72827.svg"
+            alt=""
+          />
+          <img
+            src="https://s1.thcdn.com/checkout/resources/images/959a8e732266683b799128acf46e03fd.svg"
+            alt=""
+          />
+          <img
+            src="https://s1.thcdn.com/checkout/resources/images/6732c0137a7dab50b23daf1337fe2f30.svg"
+            alt=""
+          />
+          <img
+            src="https://s1.thcdn.com/checkout/resources/images/5ba5f9cd0c43d9f966774630aa65d7c6.svg"
+            alt=""
+          />
         </div>
       </div>
     </div>
-    
   </body>
 </html>
