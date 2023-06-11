@@ -1,6 +1,6 @@
 # Skinstore
 
-Clone - SkinStore.com
+Live deployed link - [SkinStore.com](https://skinstoreclone44.netlify.app)
 
 Team Members - 
 1. Tushar Sutar          - Login and signUp Page
